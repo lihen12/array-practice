@@ -46,8 +46,23 @@
   <img src="http://appinventor.mit.edu/explore/sites/all/files/Teach/media/image_8_ball.jpg" alt="a magic 8 ball">
 
   <div>
-    <form name="question">
+    <form name="question" onsubmit="capQ();">
       <!-- TODO: Add a text input and submit button, attach to the form handler function you write in scripts.js -->
+      <label>
+        What's your Question?
+        <input type="text" name="uQuest">
+      </label>
+      
+      <input type="submit" value="submit">
+    </form>
+    
+    <form name="fortune" onsbumit="capA();">
+      <label>
+        What's your new Fortune?
+        <input type="text" name="uFort">
+      </label>
+      
+      <input type="submit" value="submit">
     </form>
   </div>
 </section>
